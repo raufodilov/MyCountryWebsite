@@ -48,14 +48,13 @@
     </style>
 </head>
 <body>
-    <h1>My Country</h1>
+    <div style="margin: 0; background: url(https://www.centralasia-travel.com/i/header-bg.jpg);
+    padding: 10rem;"></div>
     <p>A website created by me.</p>
     <style>
         h1 {
-            padding: 120px; /* some padding */
             text-align: center; /* center the text */
             background: round; /* green background */
-            background-color: darkorange;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             color: indigo; /* white text color */
             font-size: 50px;
@@ -63,28 +62,24 @@
 
         p {
             padding: 5px; /* some padding */
-            text-align: right; /* center the text */
             background: content-box; /* green background */
             color: brown; /* white text color */
             font-size: large;
         }
-    </style>
-    <a href="./the-end.html">Reference</a>
-    <a href="./statistics.html">Information</a>
-    <a href="./samarkand.html">History</a>
-    <a href="./gallery.html" class="right">Photo</a>
-    <style>
-        a {
-            float: right; /* Make sure that the links stay side-by-side */
-            display: block; /* Change the display to block, for responsive reasons (see below) */
-            color: blue; /* White text color */
-            text-align: center; /* Center the text */
-            padding: 12px 18px; /* Add some padding */
-            text-decoration: none; /* Remove underline */
-            background-color: orangered;
-            overflow: hidden;
+
+        .nav-link {
+            text-decoration: none;
+            padding: 1rem;
+            background: darkorange;
+            border-radius: 10px;
         }
     </style>
+    <div style="padding: 1rem;">
+        <a class="nav-link" href="./gallery.html">Photo</a>
+        <a class="nav-link" href="./samarkand.html">History</a>
+        <a class="nav-link" href="./statistics.html">Information</a>
+        <a class="nav-link" href="./the-end.html">Reference</a>
+    </div>
     <br />
     <br />
     <br />
@@ -109,7 +104,7 @@
 
     </i>
     <br />
-    <img src="https://uzbekembassy.com.my/images/4c8923db57f5ef332c1b2041f547412e.png" style="width:" 300" height="300" ;>
+    <img src="https://uzbekembassy.com.my/images/4c8923db57f5ef332c1b2041f547412e.png" style="width: 300" height="300" ;>
 
     <br />
     <i style="position:center; text-align:center; color:blueviolet; font-size:30px; font-family:Algerian">Uzbek Cuisine</i>
@@ -144,7 +139,7 @@
         •	Dinner (two courses, salad + dessert):	10 - 25 USD.
     </i>
     <br />
-    <img src="https://image.shutterstock.com/image-photo/uzbek-cuisine-food-pilaf-plov-600w-1129308746.jpg" style="width:" 300" height="300" ;>
+    <img src="https://image.shutterstock.com/image-photo/uzbek-cuisine-food-pilaf-plov-600w-1129308746.jpg" style="width: 300" height="300" ;>
     <br />
     <i style="font-family:'Agency FB';font-size:30px; color:brown; text-align:center;">How to Dress in Uzbekistan</i>
     <br />
@@ -162,11 +157,11 @@
     <div class="container">
         <div style="text-align:center">
             <h2 style="background-color:darkgoldenrod;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:30px;">Contact Us</h2>
-            <p>If you love my website please contact us:</p>
+            <p><b>If you love my website please contact us:</b></p>
         </div>
         <div class="row">
-            <div class="column">
-                <img src="https://cdn.shopify.com/s/files/1/0004/4384/2626/files/998926-contact.jpg?v=1519376260" style="width:50%; border-radius: 6px;">
+            <div class="column" style="display: flex;">
+                <img src="https://cdn.shopify.com/s/files/1/0004/4384/2626/files/998926-contact.jpg?v=1519376260" style="width:50%; border-radius: 6px; margin-left: auto; margin-right: auto;">
             </div>
             <div class="column">
                 <form action="/action_page.php">
@@ -209,20 +204,19 @@
                 background-color: #45a049;
             }
 
-        container {
+        .container {
             border-radius: 5px;
-            background-color: #f2f2f2;
             padding: 10px;
         }
 
-        column {
+        .column {
             float: left;
             width: 50%;
             margin-top: 6px;
             padding: 20px;
         }
 
-        row:after {
+        .row:after {
             content: "";
             display: table;
             clear: both;
@@ -265,10 +259,10 @@
             <div class="card">
                 <img src="https://www.onblastblog.com/wp-content/uploads/2019/09/09aea00fc018749c1c255ddfd594b218.jpeg" alt="Sukhrob" style="width:30%">
                 <div class="container">
-                    <h2>Sukhrob ILyoskhojayev</h2>
-                    <p class="title">Computer Devoloper</p>
+                    <h2>Sukhrob Ilyosbekov</h2>
+                    <p class="title">Software Developer</p>
                     <p>Working with C# and C++ and Java</p>
-                    <p>sukhrob_gm@gmail.com</p>
+                    <p>sukhrobgm@gmail.com</p>
                     <p><button class="button">Contact</button></p>
                 </div>
             </div>
@@ -284,30 +278,30 @@
             box-sizing: border-box;
         }
 
-        column {
+        .column {
             float: left;
             width: 22.2%;
             margin-bottom: 12px;
             padding: 0 6px;
         }
 
-        card {
+        .card {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             margin: 8px;
         }
 
-        about-section {
+        .about-section {
             padding: 30px;
             text-align: center;
-            background-color: #474e5d;
+            background-color: #c6c529;
             color: white;
         }
 
-        container {
+        .container {
             padding: 0 12px;
         }
 
-            container::after, .row::after {
+            .container::after, .row::after {
                 content: "";
                 clear: both;
                 display: table;
@@ -334,7 +328,7 @@
             }
 
         @media screen and (max-width: 650px) {
-            column {
+            .column {
                 width: 100%;
                 display: block;
             }
